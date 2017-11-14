@@ -1,7 +1,5 @@
 package com.skystmm.array;
 
-import javax.swing.*;
-import java.util.List;
 
 /**
  * 581. Shortest Unsorted Continuous Subarray
