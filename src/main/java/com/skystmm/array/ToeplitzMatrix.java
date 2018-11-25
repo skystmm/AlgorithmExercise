@@ -34,6 +34,4 @@ public class ToeplitzMatrix {
         }
         return true;
     }
-
-
 }

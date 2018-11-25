@@ -2,7 +2,7 @@
 
 > leetcode 解题练习
 
-微目标：123/day（easy->1天，normal->2天,hard -> 3天）
+微目标：123day/problem（easy->1天，normal->2天,hard -> 3天）
 
 更新记录
 
