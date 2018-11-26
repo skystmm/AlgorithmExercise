@@ -8,6 +8,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 896 | Monotonic Array | easy | 20181126 |
 | 566 | Reshape the Matrix | easy | 20181125 |
 | 766 | Toeplitz Matrix | easy | 20181125  |
 | 922 | Sort Array By Parity II | easy | 20181124 |
