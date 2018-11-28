@@ -6,8 +6,9 @@
 
 更新记录
 
-| 题目编号 | 名称 | 难度 | 提交时间 |
+| 题目编号 | 名称 | 难度 | 提交时间 | 
 | ------ | ------ | ------ |------ |
+| 485 | Max Consecutive Ones | easy | 20181128 |
 | 888 | Fair Candy Swap | easy | 20181128 |
 | 896 | Monotonic Array | easy | 20181126 |
 | 566 | Reshape the Matrix | easy | 20181125 |
