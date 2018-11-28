@@ -85,7 +85,5 @@ public class TwoSum {
         }
         return result;
     }
-    public static void main(String[] args) {
-        System.out.println(TwoSum.solutionV2(new int[]{3,2,4},6));
-    }
+    
 }

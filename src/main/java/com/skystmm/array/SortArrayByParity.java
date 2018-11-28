@@ -40,8 +40,5 @@ public class SortArrayByParity {
         return A;
     }
 
-    public static void main(String[] args) {
-        SortArrayByParity s = new SortArrayByParity();
-        s.solution(new int[]{3,1,2,4});
-    }
+
 }
