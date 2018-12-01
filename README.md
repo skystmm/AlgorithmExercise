@@ -8,6 +8,9 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 283 | Move Zeroes | easy | 20181201 |
+| 717 | 1-bit and 2-bit Characters | easy | 20181201 |
+| 448 | Find All Numbers Disappeared in an Array | easy | 20181201 |
 | 485 | Max Consecutive Ones | easy | 20181128 |
 | 888 | Fair Candy Swap | easy | 20181128 |
 | 896 | Monotonic Array | easy | 20181126 |
