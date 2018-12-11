@@ -8,6 +8,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 122 | Best Time to Buy and Sell Stock II | easy | 20181211 |
 | 169 | Majority Element | easy |  20181203 |
 | 283 | Move Zeroes | easy | 20181201 |
 | 717 | 1-bit and 2-bit Characters | easy | 20181201 |
