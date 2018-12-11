@@ -39,7 +39,4 @@ public class MajorityElement {
         return element;
     }
 
-    public static void main(String[] args) {
-        System.out.println(new MajorityElement().solution(new int[]{3,2,3}));
-    }
 }
