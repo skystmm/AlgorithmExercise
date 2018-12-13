@@ -6,8 +6,11 @@
 
 更新记录
 
+## 1.Array类问题
+
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 830 | Positions of Large Groups | easy | 20181213 |
 | 661 | Image Smoother | easy | 20181213 |
 | 697 | Degree of an Array | easy | 20181211 |
 | 217 | Contains Duplicate | easy | 20181211 |
