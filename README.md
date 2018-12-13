@@ -8,6 +8,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 661 | Image Smoother | easy | 20181213 |
 | 697 | Degree of an Array | easy | 20181211 |
 | 217 | Contains Duplicate | easy | 20181211 |
 | 122 | Best Time to Buy and Sell Stock II | easy | 20181211 |
