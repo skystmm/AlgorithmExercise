@@ -10,6 +10,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 628 | Maximum Product of Three Numbers | easy | 20181213 |
 | 830 | Positions of Large Groups | easy | 20181213 |
 | 661 | Image Smoother | easy | 20181213 |
 | 697 | Degree of an Array | easy | 20181211 |
