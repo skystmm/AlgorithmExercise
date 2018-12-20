@@ -10,6 +10,8 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 674 | Longest Continuous Increasing Subsequence | 20181220 |
+| 746 | Min Cost Climbing Stairs | easy | 20181218 |
 | 628 | Maximum Product of Three Numbers | easy | 20181213 |
 | 830 | Positions of Large Groups | easy | 20181213 |
 | 661 | Image Smoother | easy | 20181213 |
