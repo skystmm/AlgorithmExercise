@@ -10,6 +10,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 747 | Largest Number At Least Twice of Others | easy | 20181223 |
 | 53 | Maximum Subarray | easy | 20181220 |
 | 674 | Longest Continuous Increasing Subsequence | easy | 20181220 |
 | 746 | Min Cost Climbing Stairs | easy | 20181218 |
