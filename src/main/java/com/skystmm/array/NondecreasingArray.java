@@ -26,11 +26,4 @@ public class NondecreasingArray {
         return index == -1 || index == nums.length -2 || index == 0 || nums[index -1] <= nums[index+1] || nums[index] <= nums[index+2];
     }
 
-    public static void main(String[] args) {
-        NondecreasingArray o = new NondecreasingArray();
-
-        System.out.println(o.solution(new int[]{4,3,2}));
-        System.out.println(o.solution(new int[]{2,3,3,2,4}));
-
-    }
 }

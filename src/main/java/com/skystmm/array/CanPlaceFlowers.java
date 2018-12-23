@@ -71,7 +71,4 @@ public class CanPlaceFlowers {
         }
         return n == 0;
     }
-    public static void main(String[] args) {
-        CanPlaceFlowers.solution(new int[]{0,0,1,0,0}, 1);
-    }
 }

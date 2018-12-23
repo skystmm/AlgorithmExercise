@@ -44,7 +44,4 @@ public class PositionsOfLargeGroups {
         return result;
     }
 
-    public static void main(String[] args) {
-        new PositionsOfLargeGroups().solution("abbxxxxzzy");
-    }
 }

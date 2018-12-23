@@ -80,7 +80,4 @@ public class MaximumProductOfThreeNumbers {
         return Math.max(nums[0] * nums[1] * nums[nums.length - 1], nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
     }
 
-    public static void main(String[] args) {
-        new MaximumProductOfThreeNumbers().soluton2(new int[]{1,2,3,4});
-    }
 }
