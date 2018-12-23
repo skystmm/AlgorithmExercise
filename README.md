@@ -34,3 +34,6 @@
 | 905 | Sort Array By Parity| easy | 20181122 |
 
 ## hash问题
+| 题目编号 | 名称 | 难度 | 提交时间 |
+| ------ | ------ | ------ |------ |
+| 961 | N-Repeated Element in Size 2N Array | easy | 20181223 |
