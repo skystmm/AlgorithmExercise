@@ -1,0 +1,36 @@
+package com.skystmm.array;
+
+/**
+ * 665. Non-decreasing Array
+ * @author: skystmm
+ * @date: 2018/12/23 20:47
+ */
+public class NondecreasingArray {
+    /**
+     * AC O(n) time: 15ms space: O(1)
+     * @param nums
+     * @return
+     */
+    public boolean solution(int[] nums) {
+        int index  = -1;
+        int i = 0;
+        while(i < nums.length - 1){
+            if(nums[i] > nums[i+1]){
+                if(index != -1){
+                    return false;
+                }
+                index = i;
+            }
+            i++;
+        }
+        return index == -1 || index == nums.length -2 || index == 0 || nums[index -1] <= nums[index+1] || nums[index] <= nums[index+2];
+    }
+
+    public static void main(String[] args) {
+        NondecreasingArray o = new NondecreasingArray();
+
+        System.out.println(o.solution(new int[]{4,3,2}));
+        System.out.println(o.solution(new int[]{2,3,3,2,4}));
+
+    }
+}
