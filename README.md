@@ -45,3 +45,4 @@
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
 | 965 |  Univalued Binary Tree | easy | 20190107 |
+| 700 | Search in a Binary Search Tree | easy | 20190108 |
