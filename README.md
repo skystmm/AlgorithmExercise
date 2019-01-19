@@ -45,6 +45,7 @@
 ## tree问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 872 | Leaf-Similar Trees | easy | 20190119 |
 | 559 | Maximum Depth of N-ary Tree | easy | 20190116 |
 | 590 | N-ary Tree Postorder Traversal | easy | 20190116 |
 | 589 | N-ary Tree Preorder Traversal | easy | 20190116 |
