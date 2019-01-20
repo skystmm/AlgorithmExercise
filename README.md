@@ -45,6 +45,7 @@
 ## tree问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 669 |  Trim a Binary Search Tree | easy | 20190120 |
 | 429 | N-ary Tree Level Order Traversal | easy | 20190120 |
 | 897 | Increasing Order Search Tree | easy | 20190119 |
 | 872 | Leaf-Similar Trees | easy | 20190119 |
