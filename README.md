@@ -36,6 +36,11 @@
 | 867 | Transpose Matrix | easy | 20181123 |
 | 905 | Sort Array By Parity| easy | 20181122 |
 
+## string问题
+| 题目编号 | 名称 | 难度 | 提交时间 |
+| ------ | ------ | ------ |------ |
+| 929 | Unique Email Addresses | easy | 20190120 |
+
 ## hash问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
