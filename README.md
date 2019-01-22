@@ -1,6 +1,7 @@
 # leetSolute
 
-[](https://img.shields.io/badge/177-leetcode-green.svg)
+![](https://img.shields.io/badge/177-leetcode-green.svg)
+
 > leetcode 解题练习
 
 微目标：123day/problem（easy->1天，normal->2天,hard -> 3天）
