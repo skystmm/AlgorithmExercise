@@ -12,6 +12,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 4 | Median of Two Sorted Arrays | hard | 20190120 |
 | 509 | Fibonacci Number | easy | 20190114 |
 | 724 | Find Pivot Index | easy | 20181230 |
 | 665 | Non-decreasing Array | easy | 20181223 |
