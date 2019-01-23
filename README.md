@@ -12,6 +12,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 977 | Squares of a Sorted Array | easy | 20190121 |
 | 4 | Median of Two Sorted Arrays | hard | 20190120 |
 | 509 | Fibonacci Number | easy | 20190114 |
 | 724 | Find Pivot Index | easy | 20181230 |
