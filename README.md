@@ -12,6 +12,8 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 976 | Largest Perimeter Triangle | easy | 20190121 |
+| 977 | Squares of a Sorted Array | easy | 20190121 |
 | 840 | Magic Squares In Grid | easy | 20190201 |
 | 643 | Maximum Average Subarray I | easy | 20190130 |
 | 4 | Median of Two Sorted Arrays | hard | 20190120 |
