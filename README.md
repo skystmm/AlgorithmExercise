@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/177-leetcode-green.svg)
+![](https://img.shields.io/badge/182-leetcode-green.svg)
 
 > leetcode 解题练习
 
@@ -12,6 +12,7 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 914 | X of a Kind in a Deck of Cards | easy | 20190204 |
 | 976 | Largest Perimeter Triangle | easy | 20190121 |
 | 977 | Squares of a Sorted Array | easy | 20190121 |
 | 840 | Magic Squares In Grid | easy | 20190201 |
