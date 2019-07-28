@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/183-leetcode-green.svg)
+![](https://img.shields.io/badge/185-leetcode-green.svg)
 
 > leetcode 解题练习
 
@@ -12,6 +12,8 @@
 
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
+| 1122 |  Relative Sort Array | easy | 20190726 |
+| 1051 |  Height Checker | easy | 20190726 |
 | 414 | Third Maximum Number | easy | 20190204 |
 | 941 | Valid Mountain Array | easy | 20190204 |
 | 914 | X of a Kind in a Deck of Cards | easy | 20190204 |
