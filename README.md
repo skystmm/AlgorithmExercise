@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/185-leetcode-green.svg)
+![](https://img.shields.io/badge/192-leetcode-green.svg)
 
 > leetcode 解题练习
 
@@ -52,6 +52,7 @@
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
 | 929 | Unique Email Addresses | easy | 20190120 |
+| 1108 | Defanging an IP Address | easy | 20190808 |
 
 ## hash问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -73,6 +74,7 @@
 | 965 |  Univalued Binary Tree | easy | 20190107 |
 | 700 | Search in a Binary Search Tree | easy | 20190108 |
 | 617 | Merge Two Binary Trees | easy | 20190114|
+| 938 | Range Sum of BST | easy | 20190808 |
 
 ## 并发问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
