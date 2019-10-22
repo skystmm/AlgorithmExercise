@@ -1,10 +1,10 @@
 # leetSolute
 
-![](https://img.shields.io/badge/193-leetcode-green.svg)
+![](https://img.shields.io/badge/197-leetcode-green.svg)
 
 > leetcode 解题练习
 
-微目标：123day/problem（easy->1天，normal->2天,hard -> 3天）
+微目标：123day/problem（easy->1天，medium->2天,hard -> 3天）
 
 更新记录
 
@@ -85,3 +85,5 @@
 | 1117 | Building H2O | Medium | 2019804 |
 | 1116 | Print Zero Even Odd | Medium | 2019805 | 
 | 1115 | Print FooBar Alternately | Medium | 2019805 | 
+| 1195 | Fizz Buzz Multithreaded | Medium | 20191022 | 
+| 1226 | The Dining Philosophers | Medium | 20191022 | 
