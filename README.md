@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/197-leetcode-green.svg)
+![](https://img.shields.io/badge/208-leetcode-green.svg)
 
 > leetcode 解题练习
 
@@ -47,6 +47,7 @@
 | 922 | Sort Array By Parity II | easy | 20181124 |
 | 867 | Transpose Matrix | easy | 20181123 |
 | 905 | Sort Array By Parity| easy | 20181122 |
+| 852 | Peak Index in a Mountain Array | easy | 20191023 |
 
 ## string问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -55,12 +56,15 @@
 | 1108 | Defanging an IP Address | easy | 20190808 |
 | 709 | To Lower Case | easy | 20190809 |
 | 227 |  Basic Calculator II | Medium | 20190810 |
+| 1221 | Split a String in Balanced Strings | easy | 20191023 |
+| 804 | Unique Morse Code Words | easy | 20191023 |
 
 ## hash问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
 | 961 | N-Repeated Element in Size 2N Array | easy | 20181223 |
 | 884 | Uncommon Words from Two Sentences | easy | 20181223 |
+| 1207 | Unique Number of Occurrences | easy | 20191023 |
 
 ## tree问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -77,6 +81,11 @@
 | 700 | Search in a Binary Search Tree | easy | 20190108 |
 | 617 | Merge Two Binary Trees | easy | 20190114|
 | 938 | Range Sum of BST | easy | 20190808 |
+
+## math问题
+| 题目编号 | 名称 | 难度 | 提交时间 |
+| ------ | ------ | ------ |------ |
+| 942 | DI String Match | easy | 20191023 |
 
 ## 并发问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
