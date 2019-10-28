@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/210-leetcode-green.svg)
+![](https://img.shields.io/badge/221-leetcode-green.svg)
 
 > leetcode 解题练习
 
@@ -48,6 +48,7 @@
 | 867 | Transpose Matrix | easy | 20181123 |
 | 905 | Sort Array By Parity| easy | 20181122 |
 | 852 | Peak Index in a Mountain Array | easy | 20191023 |
+| 1200 | Minimum Absolute Difference | easy | 20191028 |
 
 ## string问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -59,6 +60,8 @@
 | 1221 | Split a String in Balanced Strings | easy | 20191023 |
 | 804 | Unique Morse Code Words | easy | 20191023 |
 | 657 | Robot Return to Origin | easy | 20191023 |
+| 541 | Reverse String II | easy | 20191028 |
+| 557 | Reverse Words in a String III | easy | 20191028 |
 
 ## hash问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -66,6 +69,7 @@
 | 961 | N-Repeated Element in Size 2N Array | easy | 20181223 |
 | 884 | Uncommon Words from Two Sentences | easy | 20181223 |
 | 1207 | Unique Number of Occurrences | easy | 20191023 |
+| 160 | Find Words That Can Be Formed by Characters | easy | 20191028 | 
 
 ## tree问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -87,6 +91,7 @@
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
 | 942 | DI String Match | easy | 20191023 |
+| 883 | Projection Area of 3D Shapes | easy | 20191028 |
 
 ## 并发问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
