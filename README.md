@@ -49,6 +49,7 @@
 | 905 | Sort Array By Parity| easy | 20181122 |
 | 852 | Peak Index in a Mountain Array | easy | 20191023 |
 | 1200 | Minimum Absolute Difference | easy | 20191028 |
+| 999 |  Available Captures for Rook | easy | 20191030 |
 
 ## string问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
@@ -86,12 +87,15 @@
 | 700 | Search in a Binary Search Tree | easy | 20190108 |
 | 617 | Merge Two Binary Trees | easy | 20190114|
 | 938 | Range Sum of BST | easy | 20190808 |
+| 1002 |  Find Common Characters easy | 20191030 |
 
 ## math问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
 | 942 | DI String Match | easy | 20191023 |
 | 883 | Projection Area of 3D Shapes | easy | 20191028 |
+| 1025 | Divisor Game | easy | 20191030 |
+
 
 ## 并发问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
