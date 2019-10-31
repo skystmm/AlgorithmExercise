@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/221-leetcode-green.svg)
+![](https://img.shields.io/badge/227-leetcode-green.svg)
 
 > leetcode 解题练习
 
@@ -51,6 +51,15 @@
 | 1200 | Minimum Absolute Difference | easy | 20191028 |
 | 999 |  Available Captures for Rook | easy | 20191030 |
 
+
+## 链表问题
+| 题目编号 | 名称 | 难度 | 提交时间 |
+| ------ | ------ | ------ |------ |
+| 876 | Middle of the Linked List | easy | 20191031 |
+| 725 | Split Linked List in Parts | Medium | 20191031 |
+
+
+
 ## string问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
 | ------ | ------ | ------ |------ |
@@ -96,6 +105,10 @@
 | 883 | Projection Area of 3D Shapes | easy | 20191028 |
 | 1025 | Divisor Game | easy | 20191030 |
 
+## stack问题
+| 题目编号 | 名称 | 难度 | 提交时间 |
+| ------ | ------ | ------ |------ |
+| 1047 |Remove All Adjacent Duplicates In String | easy | 20191031 |
 
 ## 并发问题
 | 题目编号 | 名称 | 难度 | 提交时间 |
