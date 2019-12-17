@@ -76,18 +76,4 @@ public class JsonParse {
         return -1;
     }
 
-
-
-
-    public static void main(String[] args) {
-       JsonParse jsonParse = new JsonParse();
-       jsonParse.buildJsonString("a.b.c.d","test");
-       jsonParse.buildJsonString("a.b.e[0].d","test1");
-       jsonParse.buildJsonString("a.b.e[0].e",1);
-       jsonParse.buildJsonString("a.b.e[1].e",1);
-       jsonParse.buildJsonString("a.b.c.de","2");
-       jsonParse.buildJsonString("t",213);
-        jsonParse.buildJsonString("b.c",4L);
-        System.out.println(jsonParse.getJsonString());
-    }
 }
