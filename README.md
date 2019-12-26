@@ -1,6 +1,6 @@
 # leetSolute
 
-![](https://img.shields.io/badge/244-leetcode-green.svg)
+![](https://img.shields.io/badge/247-leetcode-green.svg)
 
 > leetcode 解题练习
 
