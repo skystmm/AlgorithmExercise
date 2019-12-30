@@ -1,12 +1,13 @@
-# leetSolute
+# AlgorithmExercise
 
 ![](https://img.shields.io/badge/247-leetcode-green.svg)
+![](https://img.shields.io/badge/4-lintcode-green.svg)
 
 > leetcode 解题练习
 
-微目标：123day/problem（easy->1天，medium->2天,hard -> 3天）
 
 更新记录
+
 
 ## Array类问题
 
