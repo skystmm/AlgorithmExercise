@@ -1,7 +1,7 @@
 #lintcode解题记录
 
-![](https://img.shields.io/badge/8-Easy-green.svg)
-![](https://img.shields.io/badge/6-Medium-yellow.svg)
+![](https://img.shields.io/badge/7-Easy-green.svg)
+![](https://img.shields.io/badge/7-Medium-yellow.svg)
 ![](https://img.shields.io/badge/0-Hard-red.svg)
 
 
@@ -11,3 +11,4 @@
 | ------ | ------ | ------ |------ |------ |
 | 5 |  Kth Largest Element | Medium | 2020-01-02 | 使用堆排序（非最优解） |
 | 13 |  Implement strStr() | Easy | 2020-01-03 | 暴力匹配（非最优解） |
+| 15 |  Permutations | Medium | 2020-01-04 | 使用递归（非递归未实现） |
