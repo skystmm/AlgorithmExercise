@@ -1,9 +1,7 @@
 package com.skystmm.lintcode.cache;
 
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * 24. LFU Cache
@@ -18,28 +16,15 @@ public class LFUCache {
 
     private int capacity;
 
-    private List<Rate> rates;
+    private LFULinkNode head ;
+
     /*
      * @param capacity: An integer
-     */
-    public LFUCache(int capacity) {
+     */public LFUCache(int capacity) {
         // do intialization if necessary
-        if(capacity < 1){
-            throw new IllegalArgumentException("capacity should be gatter than 0");
-        }
-        this.cache = new HashMap<>();
         this.capacity = capacity;
-        this.rates = initRates(capacity);
-    }
-
-    private List<Rate> initRates(int capacity) {
-        List<Rate> rates = new ArrayList<>();
-        int i =0;
-        while(i< capacity){
-            rates.add(new Rate());
-            i++;
-        }
-        return  rates;
+        this.cache = new HashMap<>();
+        head = new LFULinkNode();
     }
 
     /*
@@ -49,19 +34,16 @@ public class LFUCache {
      */
     public void set(int key, int value) {
         // write your code here
-        if(cache.containsKey(key)){
-            cache.put(key, value);
-        }else{
+        if(!cache.containsKey(key)){
             if(cache.size() == capacity){
-                Rate head =   rates.get(0);
-                cache.remove(head.key);
+                remove();
             }
-            cache.put(key, value);
-            insertRate(key);
+            insert(key);
+        }else{
+            update(key);
         }
+        cache.put(key, value);
     }
-
-
 
     /*
      * @param key: An integer
@@ -70,114 +52,84 @@ public class LFUCache {
     public int get(int key) {
         // write your code here
         if(cache.containsKey(key)){
-            updateRate(key);
-            return  cache.get(key);
+            update(key);
+            return cache.get(key);
         }
-        return  -1;
+        return -1;
     }
 
-
-    /**
-     * 插入新元素访问
-     * @param key
-     */
-    private void insertRate(int key) {
-        Rate newRate = new Rate(key);
-        rates.set(0,newRate);
-
-        int index = 0;
-        while(index < rates.size()){
-            int lIndex = index * 2 + 1;
-            if(lIndex < rates.size()){
-                if(lIndex + 1 < rates.size() && rates.get(lIndex).count >= rates.get(lIndex +1).count){
-                    lIndex ++;
-                }
-                if(rates.get(index).count >= rates.get(lIndex).count){
-                    Rate tmp = rates.get(index);
-                    rates.set(index, rates.get(lIndex));
-                    rates.set(lIndex, tmp);
-                    index = lIndex;
-                }else {
-                    break;
-                }
-            }else {
+    private void insert(int key){
+        LFULinkNode lfuLinkNode = new LFULinkNode();
+        lfuLinkNode.key = key;
+        lfuLinkNode.count = 0;
+        LFULinkNode prev = head;
+        LFULinkNode cur = head.next;
+        boolean flag = true;
+        while(cur != null){
+            if(cur.count > lfuLinkNode.count){
+                prev.next = lfuLinkNode;
+                lfuLinkNode.next = cur;
+                flag = false;
                 break;
             }
+            prev =cur;
+            cur = cur.next;
+        }
+        if(flag){
+            prev.next = lfuLinkNode;
         }
     }
 
-    /**
-     * 元素更新
-     * @param key
-     */
-    private void updateRate(int key) {
-        int lIndex = -1;
-        int rIndex = rates.size()-1;
-        Rate tmp =null;
-        for(int i =0 ;i<rates.size();i++){
-            if(lIndex < 0){
-                if(key == rates.get(i).key){
-                    lIndex = i;
-                    rates.get(i).count++;
-                }
-            }else{
-                if(rates.get(lIndex).count == rates.get(i).count){
-                    rIndex = i;
+    private  void remove(){
+       LFULinkNode remove =  head.next;
+       cache.remove(remove.key);
+       if(remove!= null){
+           head.next = remove.next;
+       }else{
+           head.next = null;
+       }
+    }
+
+    private void update(int key){
+        LFULinkNode target = null;
+        LFULinkNode prev =head;
+        LFULinkNode cur = head.next;
+        while(cur != null){
+            if(target == null){
+                if(cur.key == key){
+                    target = cur;
+                    target.count++;
+                    prev.next = cur.next;
                     break;
                 }
             }
-
-        }
-        if( lIndex > -1 && lIndex < rIndex){
-            Rate cur = rates.get(lIndex);
-            for(int i = lIndex; i < rIndex ; i++){
-                rates.set(i, rates.get(i+ 1));
-            }
-            rates.set(rIndex,cur );
+            cur = cur.next;
         }
 
-        //heapCompare(index);
-    }
-
-    private void heapCompare(int index){
-        while(index < rates.size()){
-            int lIndex = index * 2 + 1;
-            if(lIndex < rates.size()){
-                if(lIndex + 1 < rates.size() && rates.get(lIndex).count > rates.get(lIndex +1).count){
-                    lIndex ++;
-                }
-                if(rates.get(index).count >= rates.get(lIndex).count){
-                    Rate tmp = rates.get(index);
-                    rates.set(index, rates.get(lIndex));
-                    rates.set(lIndex, tmp);
-                    index = lIndex;
-                }else {
+        if(target != null && target.next != null){
+            cur = head.next;
+            while(cur != null){
+                if(cur.count > target.count){
                     break;
                 }
-            }else {
-                break;
+                prev = cur;
+                cur= cur.next;
             }
+            target.next =  prev.next;
+            prev.next = target;
         }
     }
 
-    final class Rate {
-        private Integer key;
-        private int count=Integer.MIN_VALUE;
+    final class LFULinkNode{
+        int key;
+        int count;
+        LFULinkNode next;
 
-        public Rate() {
-            key = Integer.MIN_VALUE;
-        }
-
-        public Rate(Integer key) {
-            this.key = key;
-            this.count = 1;
-        }
-
-        public Integer getKey() {
+        public int getKey() {
             return key;
         }
 
-        public void setKey(Integer key) {
+        public void setKey(int key) {
             this.key = key;
         }
 
@@ -188,14 +140,23 @@ public class LFUCache {
         public void setCount(int count) {
             this.count = count;
         }
+
+        public LFULinkNode getNext() {
+            return next;
+        }
+
+        public void setNext(LFULinkNode next) {
+            this.next = next;
+        }
     }
 
     public static void main(String[] args) {
-        LFUCache cache = new LFUCache(3);
+        LFUCache cache = new LFUCache(2);
         cache.set(1, 10);
         cache.set(2, 20);
+        cache.set(2, 30);
         cache.set(3, 30);
-        System.out.println(cache.get(1));
+        System.out.println(cache.get(2));
         cache.set(4, 40);
         System.out.println(cache.get(4));
         System.out.println(cache.get(3));
