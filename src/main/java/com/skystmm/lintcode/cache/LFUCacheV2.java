@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
+ * 24. LFU Cache
+ * AC use heap sort
+ * put time O(logN)
+ * get time O(logN)
  * @author: skystmm
  * @date: 2020/1/7 23:44
  */

@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/9-Easy-green.svg)
 ![](https://img.shields.io/badge/8-Medium-yellow.svg)
-![](https://img.shields.io/badge/1-Hard-red.svg)
+![](https://img.shields.io/badge/2-Hard-red.svg)
 
 
 ## 已AC遗留问题
