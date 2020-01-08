@@ -5,122 +5,128 @@ import java.util.HashMap;
 
 /**
  * 24. LFU Cache
- * NAC 60% pass
- * use map and heap sort
+ * AC use LinkList
+ * put time O(n)
+ * get time O(n)
  * @author: skystmm
  * @date: 2020/1/6 11:12
  */
 public class LFUCache {
 
-    private HashMap<Integer,Integer> cache;
+    private HashMap<Integer, Integer> cache;
 
     private int capacity;
 
-    private LFULinkNode head ;
+    private LFULinkNode head;
 
-    /*
+    /**
      * @param capacity: An integer
-     */public LFUCache(int capacity) {
+     */
+    public LFUCache(int capacity) {
         // do intialization if necessary
         this.capacity = capacity;
         this.cache = new HashMap<>();
         head = new LFULinkNode();
     }
 
-    /*
-     * @param key: An integer
+
+    /**
+     * @param key:   An integer
      * @param value: An integer
      * @return: nothing
      */
     public void set(int key, int value) {
         // write your code here
-        if(!cache.containsKey(key)){
-            if(cache.size() == capacity){
+        if (!cache.containsKey(key)) {
+            if (cache.size() == capacity) {
                 remove();
             }
             insert(key);
-        }else{
+        } else {
             update(key);
         }
         cache.put(key, value);
     }
 
-    /*
+    /**
      * @param key: An integer
      * @return: An integer
      */
     public int get(int key) {
         // write your code here
-        if(cache.containsKey(key)){
+        if (cache.containsKey(key)) {
             update(key);
             return cache.get(key);
         }
         return -1;
     }
 
-    private void insert(int key){
+    private void insert(int key) {
         LFULinkNode lfuLinkNode = new LFULinkNode();
         lfuLinkNode.key = key;
         lfuLinkNode.count = 0;
         LFULinkNode prev = head;
         LFULinkNode cur = head.next;
         boolean flag = true;
-        while(cur != null){
-            if(cur.count > lfuLinkNode.count){
+        while (cur != null) {
+            if (cur.count > lfuLinkNode.count) {
                 prev.next = lfuLinkNode;
                 lfuLinkNode.next = cur;
                 flag = false;
                 break;
             }
-            prev =cur;
+            prev = cur;
             cur = cur.next;
         }
-        if(flag){
+        if (flag) {
             prev.next = lfuLinkNode;
         }
     }
 
-    private  void remove(){
-       LFULinkNode remove =  head.next;
-       cache.remove(remove.key);
-       if(remove!= null){
-           head.next = remove.next;
-       }else{
-           head.next = null;
-       }
+    private void remove() {
+        LFULinkNode remove = head.next;
+        cache.remove(remove.key);
+        if (remove != null) {
+            head.next = remove.next;
+        } else {
+            head.next = null;
+        }
     }
 
-    private void update(int key){
+    private void update(int key) {
         LFULinkNode target = null;
-        LFULinkNode prev =head;
+        LFULinkNode prev = head;
         LFULinkNode cur = head.next;
-        while(cur != null){
-            if(target == null){
-                if(cur.key == key){
-                    target = cur;
-                    target.count++;
-                    prev.next = cur.next;
-                    break;
+        while (cur != null) {
+            if (cur.key == key) {
+                target = cur;
+                target.count++;
+                if (target.next == null) {
+                    return;
                 }
+                prev.next = cur.next;
+                break;
             }
+            prev = cur;
             cur = cur.next;
         }
 
-        if(target != null && target.next != null){
+        if (target != null) {
             cur = head.next;
-            while(cur != null){
-                if(cur.count > target.count){
+            prev = head;
+            while (cur != null) {
+                if (cur.count > target.count) {
                     break;
                 }
                 prev = cur;
-                cur= cur.next;
+                cur = cur.next;
             }
-            target.next =  prev.next;
+            target.next = prev.next;
             prev.next = target;
         }
     }
 
-    final class LFULinkNode{
+    final class LFULinkNode {
         int key;
         int count;
         LFULinkNode next;
@@ -151,18 +157,23 @@ public class LFUCache {
     }
 
     public static void main(String[] args) {
-        LFUCache cache = new LFUCache(2);
-        cache.set(1, 10);
-        cache.set(2, 20);
-        cache.set(2, 30);
-        cache.set(3, 30);
+        LFUCache cache = new LFUCache(5);
+        cache.set(1, 1);
+        cache.set(2, 2);
+        cache.set(2, 3);
+        cache.set(3, 3);
+        cache.set(2, 2);
+        cache.set(4, 4);
+        cache.set(5, 5);
         System.out.println(cache.get(2));
-        cache.set(4, 40);
+        cache.set(4, 4);
+        cache.set(6, 6);
         System.out.println(cache.get(4));
         System.out.println(cache.get(3));
         System.out.println(cache.get(2));
         System.out.println(cache.get(1));
-        cache.set(5, 50);
+        System.out.println(cache.get(6));
+        cache.set(5, 5);
         System.out.println(cache.get(1));
         System.out.println(cache.get(2));
         System.out.println(cache.get(3));

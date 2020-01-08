@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/9-Easy-green.svg)
 ![](https://img.shields.io/badge/8-Medium-yellow.svg)
-![](https://img.shields.io/badge/0-Hard-red.svg)
+![](https://img.shields.io/badge/1-Hard-red.svg)
 
 
 ## 已AC遗留问题
@@ -14,3 +14,4 @@
 | 15 |  Permutations | Medium | 2020-01-04 | 使用递归（非递归未实现） |
 | 16 |  PermutationsII | Medium | 2020-01-04 | 使用递归（非递归未实现） |
 | 22 |  Flatten List | Easy | 2020-01-05 | 使用递归（非递归未实现） |
+| 24 | LFU Cache | Hard | 2020-01-08 | 使用单链表进行命中记录（非最优解）|
