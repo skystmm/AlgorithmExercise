@@ -1,7 +1,7 @@
 #lintcode解题记录
 
 ![](https://img.shields.io/badge/9-Easy-green.svg)
-![](https://img.shields.io/badge/8-Medium-yellow.svg)
+![](https://img.shields.io/badge/9-Medium-yellow.svg)
 ![](https://img.shields.io/badge/2-Hard-red.svg)
 
 
@@ -15,3 +15,4 @@
 | 16 |  PermutationsII | Medium | 2020-01-04 | 使用递归（非递归未实现） |
 | 22 |  Flatten List | Easy | 2020-01-05 | 使用递归（非递归未实现） |
 | 24 | LFU Cache | Hard | 2020-01-08 | 使用单链表进行命中记录（非最优解）|
+| 30 | Insert Interval | Medium | 2020-01-12 | 遍历解（非最优）|
