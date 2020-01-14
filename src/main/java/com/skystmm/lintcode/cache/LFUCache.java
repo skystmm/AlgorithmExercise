@@ -156,28 +156,4 @@ public class LFUCache {
         }
     }
 
-    public static void main(String[] args) {
-        LFUCache cache = new LFUCache(5);
-        cache.set(1, 1);
-        cache.set(2, 2);
-        cache.set(2, 3);
-        cache.set(3, 3);
-        cache.set(2, 2);
-        cache.set(4, 4);
-        cache.set(5, 5);
-        System.out.println(cache.get(2));
-        cache.set(4, 4);
-        cache.set(6, 6);
-        System.out.println(cache.get(4));
-        System.out.println(cache.get(3));
-        System.out.println(cache.get(2));
-        System.out.println(cache.get(1));
-        System.out.println(cache.get(6));
-        cache.set(5, 5);
-        System.out.println(cache.get(1));
-        System.out.println(cache.get(2));
-        System.out.println(cache.get(3));
-        System.out.println(cache.get(4));
-        System.out.println(cache.get(5));
-    }
 }
