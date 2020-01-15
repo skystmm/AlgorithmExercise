@@ -1,7 +1,8 @@
 #lintcode解题记录
 
+![](https://img.shields.io/badge/1-Naive-blue.svg)
 ![](https://img.shields.io/badge/10-Easy-green.svg)
-![](https://img.shields.io/badge/11-Medium-yellow.svg)
+![](https://img.shields.io/badge/12-Medium-yellow.svg)
 ![](https://img.shields.io/badge/2-Hard-red.svg)
 
 
@@ -16,3 +17,4 @@
 | 22 |  Flatten List | Easy | 2020-01-05 | 使用递归（非递归未实现） |
 | 24 | LFU Cache | Hard | 2020-01-08 | 使用单链表进行命中记录（非最优解）|
 | 30 | Insert Interval | Medium | 2020-01-12 | 遍历解（非最优）|
+| 38 | Search a 2D Matrix II | Medium | 2020-01-15 | 遍历解（非最优）|
