@@ -1,8 +1,8 @@
 #lintcode解题记录
 
 ![](https://img.shields.io/badge/1-Naive-blue.svg)
-![](https://img.shields.io/badge/27-Easy-green.svg)
-![](https://img.shields.io/badge/13-Medium-yellow.svg)
+![](https://img.shields.io/badge/31-Easy-green.svg)
+![](https://img.shields.io/badge/14-Medium-yellow.svg)
 ![](https://img.shields.io/badge/2-Hard-red.svg)
 ![](https://img.shields.io/badge/0-Super-orange.svg)
 
