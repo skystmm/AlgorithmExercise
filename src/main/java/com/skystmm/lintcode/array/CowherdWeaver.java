@@ -6,7 +6,7 @@ package com.skystmm.lintcode.array;
  */
 public class CowherdWeaver {
     /**
-     * use traversal
+     * use traversal && backtrack
      * @param maze: the maze
      * @return: Can they reunion?
      */
