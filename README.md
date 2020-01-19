@@ -1,7 +1,7 @@
 # AlgorithmExercise
 
 ![](https://img.shields.io/badge/247-leetcode-green.svg)
-![](https://img.shields.io/badge/53-lintcode-blue.svg)
+![](https://img.shields.io/badge/55-lintcode-blue.svg)
 
 
 > 算法题练习
