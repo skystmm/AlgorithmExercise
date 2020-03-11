@@ -1,6 +1,6 @@
 #leetcode解题记录
 
-![](https://img.shields.io/badge/178-Easy-green.svg)
+![](https://img.shields.io/badge/179-Easy-green.svg)
 ![](https://img.shields.io/badge/59-Medium-yellow.svg)
 ![](https://img.shields.io/badge/10-Hard-red.svg)
 
@@ -92,7 +92,8 @@
 | 700 | Search in a Binary Search Tree | easy | 20190108 |
 | 617 | Merge Two Binary Trees | easy | 20190114|
 | 938 | Range Sum of BST | easy | 20190808 |
-| 1002 |  Find Common Characters easy | 20191030 |
+| 1002 |  Find Common Characters | easy | 20191030 |
+| 111 |  Minimum Depth of Binary Tree | easy | 20200311 |
 
 ## math问题
 | 题目编号 | 名称 | 难度 | 提交时间 |

@@ -1,6 +1,6 @@
 # AlgorithmExercise
 
-![](https://img.shields.io/badge/247-leetcode-green.svg)
+![](https://img.shields.io/badge/248-leetcode-green.svg)
 ![](https://img.shields.io/badge/56-lintcode-blue.svg)
 
 
